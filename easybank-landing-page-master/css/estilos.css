@@ -1,0 +1,63 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+:root{
+
+	--dark:hsl(233, 26%, 24%);
+	--green:hsl(136, 65%, 51%);
+	--cyan:hsl(192, 70%, 51%);
+	--public:'Public Sans', sans-serif;
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1445 */ 
+
+
+@media screen and (max-width: 1445px){
+
+
+}
+
+
+
+/* 991 */ 
+
+@media screen and (max-width: 991px){
+
+}
+
+
+
+/* 768px */ 
+
+@media screen and(max-width: 768px){
+
+
+}
+
+
+/* 576 */
+
+@media screen and (max-width: 576px){
+
+} 
+
