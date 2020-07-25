@@ -8,6 +8,7 @@
 	--dark:hsl(233, 26%, 24%);
 	--green:hsl(136, 65%, 51%);
 	--cyan:hsl(192, 70%, 51%);
+	--gris:#9597a5;
 	--public:'Public Sans', sans-serif;
 
 };
@@ -15,6 +16,179 @@
 
 
 
+.header{
+	width:100%;
+	height: 80px;
+	background-color: #ffffff;
+	box-shadow: 5px 10px #888888;
+}
+
+.header .row{
+	width:100%;
+	height: 80px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.logo{
+	display:flex;
+	justify-content: center;
+	
+}
+
+.logo img{
+	align-items: center;
+}
+
+.menu{
+	display:flex;
+	justify-content:center;
+	flex-direction:row;
+	align-items: center;
+	width:331px;
+	height: 40px;
+}
+
+
+.menu a{
+	font-size: 16px;
+	font-family: var(--public);
+	font-weight: 400;
+	height: 16px;
+	color: var(--gris);
+	margin-right: 10px;
+	margin-left: 10px;
+	padding-bottom: 10px;
+	text-decoration: none !important;
+}
+
+.menu a:hover{
+	border-bottom:3px solid #33D35E;
+	color:var(--gris)
+}
+
+.cta{
+	width:80%;
+	height: 40px;
+	display:flex;
+	flex-direction: row;
+	justify-content:center;
+}
+
+.cta a {
+	width:180px;
+	height: 50px;
+	align-self: center;
+	background:linear-gradient(135deg, #33D35E, #2AB6D9);
+	border-radius: 28px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	text-decoration: none !important;
+
+}
+
+.cta a span{
+	color: white;
+	text-align: center;
+}
+
+.section-2{
+	width:100%;
+	height: 700px;
+
+}
+
+.section-2 .row{
+	width:100%;
+	height:680px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+
+.section-2 .row .texto{
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+}
+
+
+.bloque-2{
+	width:90%;
+	margin-left:5%;
+	margin-right: 5%;
+	height: 400px;
+	margin-left: 15%;
+}
+
+.bloque-2 h1{
+	width: 385px;
+	height: 128px;
+	color:#2d314d;
+	font-family: var(--public);
+	font-size:36px;
+	font-weight: 400;
+	line-height: 44px;
+	letter-spacing: -1px;
+}
+
+.bloque-2 p{
+	width: 400px;
+	height:84px;
+	color: #9597a5;
+  font-family: "Public Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  margin-bottom:30px;
+
+}
+
+.bloque-2 .butn-2{
+	width: 163px;
+	height: 44px;
+	border-radius: 22px;
+	background: linear-gradient(135deg, #33D35E, #2AB6D9);
+	cursor:pointer;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.bloque-2 .butn-2 a{
+   color:white;
+   text-decoration: none !important;
+}
+
+
+.img{
+	background-image: url(../images/bg-intro-desktop.svg);
+	background-size: 580px 600px;
+	background-repeat: no-repeat;
+	margin-right:0px;
+	
+}
+
+.section-2 .row .img img{
+	width:500px;
+	height: 600px;
+}
+
+
+.menu-movil i{
+	font-size: 30px;
+	cursor:pointer;
+}
 
 
 
@@ -43,6 +217,95 @@
 
 @media screen and (max-width: 991px){
 
+	.menu a{
+		font-size: 16px;
+		font-family: var(--public);
+		font-weight: 400;
+		height: 16px;
+		color: var(--gris);
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	
+	.cta{
+		width:70%;
+		height: 40px;
+		display:flex;
+		flex-direction: row;
+		justify-content:center;
+	}
+	
+	.cta a {
+		width:180px;
+		height: 50px;
+		align-self: center;
+		background:linear-gradient(135deg, #33D35E, #2AB6D9);
+		border-radius: 28px;
+		display: flex;
+		justify-content:center;
+		align-items: center;
+	
+	}
+	
+	.cta a span{
+		color: white;
+		text-align: center;
+	}
+	
+	.section-2 .row .img img{
+		width:350px;
+		height: 500px;
+	}
+
+	.bloque-2 h1{
+		width: 385px;
+		height: 128px;
+		color:#2d314d;
+		font-family: var(--public);
+		font-size:32px;
+		font-weight: 400;
+		line-height: 44px;
+		letter-spacing: -1px;
+	}
+	
+	.bloque-2 p{
+		width: 370px;
+		height:84px;
+		color: #9597a5;
+	  font-family: "Public Sans";
+	  font-size: 16px;
+	  font-weight: 400;
+	  line-height: 22px;
+	  letter-spacing: -0.28125px;
+	  margin-bottom:30px;
+	
+	}
+	
+	.bloque-2 .butn-2{
+		width: 163px;
+		height: 44px;
+		border-radius: 22px;
+		background: linear-gradient(135deg, #33D35E, #2AB6D9);
+		cursor:pointer;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	
+	
+	}
+	
+	.bloque-2 .butn-2 a{
+	   color:white;
+	   text-decoration: none !important;
+	}
+
+	.img{
+		background-image: url(../images/bg-intro-desktop.svg);
+		background-size: 500px 500px ;
+		background-repeat: no-repeat;
+	}
+	
+    
 }
 
 
@@ -51,13 +314,13 @@
 
 @media screen and(max-width: 768px){
 
-
+	
 }
 
 
 /* 576 */
 
 @media screen and (max-width: 576px){
-
+    
 } 
 
